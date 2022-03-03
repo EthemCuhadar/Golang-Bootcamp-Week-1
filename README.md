@@ -16,7 +16,7 @@
 
 Our first program will print "Hello World". The code is shown below. 
 
-```go 
+```go
 package main
 
 import "fmt"
@@ -27,21 +27,52 @@ fun main(){
 }
 ```
 
-
-
-
 To run the code, type "go run filename.go" in terminal. 
 
-
-
-
+```console
+go run hello-world.go
+Hello World
+```
 
 --------------------------------------------------------------------
 
 # Starting with Variable Types
 
+In Go, "var" declares variables.
+
 --------------------------------------------------------
 
 ## Booleans
+
+Boolean data type is the data type which can be ***True*** or ***False***. Example code is shown below.
+
+```go
+package main
+
+import "fmt"
+
+
+fun main(){
+
+    var boolVal1 bool
+    fmt.Println(boolVar1)
+
+    var boolVal2 = true
+    fmt.Println(boolVal2)
+}
+```
+
+```console
+go run Booleans.go
+false
+true
+```
+
+* Default bool value in Go is false
+* When boolVal2 is pointed to ***true***, it is not necessary to decleare type bool.
+
+-------------------------------------------------------
+
+## Integers
 
 
