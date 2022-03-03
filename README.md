@@ -16,7 +16,7 @@
 
 Our first program will print "Hello World". The code is shown below. 
 
-"""go 
+```go 
 package main
 
 import "fmt"
@@ -25,7 +25,8 @@ fun main(){
     ftm.Println("Hello World")
 
 }
-"""
+```
+
 
 
 
