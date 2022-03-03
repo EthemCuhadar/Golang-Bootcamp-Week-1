@@ -1,10 +1,12 @@
 # Golang
 
+![Golang Image]()
+
 -------------------------------------------------------------------
 
 ## General Information
 
-- **GOlang**, aka "**Go**", is an open source, statically typed and compiled programming language designed at Google by ***Robert Griesemer***, ***Rob Pike*** and ***Ken Thompson***. 
+- **Golang**, aka "**Go**", is an open source, statically typed and compiled programming language designed at Google by ***Robert Griesemer***, ***Rob Pike*** and ***Ken Thompson***. 
 
 - Go was publicly announced in Novermber 2009. 
 
@@ -74,5 +76,51 @@ true
 -------------------------------------------------------
 
 ## Integers
+
+There are 4 types of integers in Go which are **int8**, **int16**, **int32** and **int64**.
+
+```go
+package main
+
+import (
+    "fmt"
+    "reflect"
+)
+
+func main() {
+
+    var intVal1 int8 = 10
+    var intVal2 int16 = 10
+
+    fmt.Println(intVal1)
+    fmt.Println(intVal2)
+
+    fmt.Printf("Type of intVal1: %v\n", reflect.TypeOf(intVal1))
+    fmt.Printf("Type of intVal2: %v\n", reflect.TypeOf(intVal2))
+
+}
+```
+
+```console
+10
+10
+Type of intVal1: int8
+Type of intVal1: int16
+```
+
+In Go programming language, variable types are very strict. Therefore, you cannot apply basic operations for different types of variables such as adding and multiplication. You can see an example of this situation below with decleared values of ***intVal1*** and ***intVal2***.
+
+```go
+fmt.Println(intVal1 + intVal2)
+```
+
+```console
+# command-line-arguments
+.\Integers.go:25:22: invalid operation: intVal1 + intVal2 (mismatched types int8 and int16)
+```
+
+* The general types of these 2 values may be the same. However, there are also 4 types in the integers. Hence, integer types are different for this situation.
+
+--------------------------------------------
 
 
