@@ -16,14 +16,16 @@
 
 Our first program will print "Hello World". The code is shown below. 
 
-"""go package main
+"""go 
+package main
 
 import "fmt"
 
 fun main(){
     ftm.Println("Hello World")
 
-}"""
+}
+"""
 
 
 
