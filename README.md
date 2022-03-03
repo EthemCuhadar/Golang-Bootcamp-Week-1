@@ -1,6 +1,7 @@
 # Golang
 
 ![Golang Image](Golang-810x457.png)
+The image is taken from http://www.kemalburakyilmaz.com/golang-pointers/
 
 -------------------------------------------------------------------
 
