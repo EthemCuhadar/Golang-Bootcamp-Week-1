@@ -40,7 +40,16 @@ Hello World
 
 # Starting with Variable Types
 
-In Go, "var" declares variables.
+* In Go, "var" declares variables.
+* In Go programming language, several variables can be defined in single line as shown below.
+
+```go
+var intVal1, intVal2 int = 10, 20
+```
+
+```go
+var intVal, strVal = 10, "patika"
+```
 
 --------------------------------------------------------
 
@@ -123,4 +132,39 @@ fmt.Println(intVal1 + intVal2)
 
 --------------------------------------------
 
+## Floats
 
+There are 2 types of floats in Go programming language which are ***float32*** and ***float64***. Likewise integers, the types of these two are different. Therefore, the operations between these 2 types of floats will cause an error.
+
+```go
+package main
+
+import (
+    "fmt"
+    "reflect"
+)
+
+func main() {
+
+    var floatVal1 float32 = 10.2
+    var floatVal2 float64  = 10.2
+
+    fmt.Println(floatVal1)
+    fmt.Println(floatVal2)
+
+    fmt.Printf("Type of floatVal1: %v\n", reflect.TypeOf(floatVal1))
+    fmt.Printf("Type of floatVal2: %v\n", reflect.TypeOf(floatVal2))
+
+}
+```
+
+```console
+10.2
+10.2
+Type of floatVal1: float32
+Type of floatVal2: float64
+```
+
+--------------------------------------------------------------
+
+## Strings
